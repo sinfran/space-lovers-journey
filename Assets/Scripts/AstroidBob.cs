@@ -5,7 +5,7 @@ public class AstroidBob : MonoBehaviour {
     
 	public Vector3 initialPosition;
 	public Vector3 direction;
-	public float bobHeight = 0.3f;
+	public float bobHeight = 0.5f;
 	public float bobSpeed = 0.3f;
     public float offset = 0f;
 

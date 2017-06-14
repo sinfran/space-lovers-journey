@@ -5,14 +5,16 @@ using UnityEngine;
 public class KiteDevice : MonoBehaviour
 {
     public float kiteSpeed = 8.0f;
-    public enum State { DORMANT, GET_ON_KITE, FLY };
-    public State s;
+    public enum State { INACTIVE, BOARD_KITE, FLY };
+    
+	// FRANCES: changed variable 's' to static; not sure if I'm allowed to do that...
+	public static State s;
     private GameObject player;
     private GameObject kiteContainer;
     private bool bound = false;
     void Start()
     {
-        s = State.DORMANT;
+        s = State.INACTIVE;
         kiteContainer = transform.parent.gameObject;
     }
     //TODO: Handle offset between person and kite
@@ -21,9 +23,9 @@ public class KiteDevice : MonoBehaviour
 
         switch (s)
         {
-            case (State.DORMANT):
+            case (State.INACTIVE):
                 break;
-            case (State.GET_ON_KITE):
+            case (State.BOARD_KITE):
                 s = State.FLY;
                 break;
             case (State.FLY):
@@ -59,12 +61,19 @@ public class KiteDevice : MonoBehaviour
     {
         print("Kite Operate called.");
 
-        //Logic to move the person on top of the kite
+		//Logic to move the person on top of the kite
         Person p = devo.GetComponent<Person>();
-        p.canMove = false;
-        player = p.gameObject;
 
-        s = State.GET_ON_KITE;
+
+
+
+		if (Vector3.Distance (p.transform.position, kiteContainer.transform.position) < 4) {
+
+
+			p.canMove = false;
+			player = p.gameObject;
+			s = State.BOARD_KITE;
+		}
     }
 
 }
