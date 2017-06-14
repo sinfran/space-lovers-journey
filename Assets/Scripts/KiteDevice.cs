@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KiteDevice : MonoBehaviour
 {
-    public float kiteSpeed = 10.0f;
+    public float kiteSpeed = 8.0f;
     public enum State { DORMANT, GET_ON_KITE, FLY };
     public State s;
     private GameObject player;
