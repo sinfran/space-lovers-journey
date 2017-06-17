@@ -46,7 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Free Low Poly Toon Nature\Standard Assets\Editor\ImageEffects\AntialiasingEditor.cs" />
      <Compile Include="Assets\TornadoBanditsStudio\Editor\TBS_PresentationWindow.cs" />
+     <None Include="Assets\HolyShift\readme.txt" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Free Low Poly Toon Nature\Readme.txt" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Free Low Poly Toon Nature\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
