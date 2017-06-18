@@ -17,6 +17,9 @@ public class KiteDevice : MonoBehaviour
         s = State.INACTIVE;
         kiteContainer = transform.parent.gameObject;
     }
+
+
+
     //TODO: Handle offset between person and kite
     void Update()
     {
